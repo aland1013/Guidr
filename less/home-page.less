@@ -1,4 +1,57 @@
-.banner-img {
-  margin-top: 80px;
+.banner-image-wrapper {
+  position: relative;
   width: 100%;
+  z-index: -1;
+
+  .banner-img {
+    margin-top:150px;
+    width: 100%;
+  }
+
+  .text-block {
+    position: absolute;
+    left: 0;
+    top: 78%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
 }
+
+.features {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 30px;
+  .flex(space-between, stretch);
+
+  .feature-box {
+    width: 30%;
+    padding: 20px 0;
+    .center();
+    flex-direction: column;
+    background-color: #f1f1f1;
+    // border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+
+    i {
+      font-size: 12rem;
+      padding-bottom: 20px;
+      color: @header-font-color;
+    }
+
+    h3 {
+      font-size: 4rem;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 2rem;
+      padding: 5%
+    }
+
+  }
+}
+

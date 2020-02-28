@@ -4559,6 +4559,23 @@ table {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400;
 }
+/*!
+ * Font Awesome Free 5.12.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url('../webfonts/fa-solid-900.eot');
+  src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-solid-900.woff2') format('woff2'), url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.ttf') format('truetype'), url('../webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
 * {
   box-sizing: border-box;
 }
@@ -4574,8 +4591,12 @@ h1 {
   font-size: 10rem;
   font-weight: 1000;
 }
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7rem;
+}
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -4603,7 +4624,7 @@ h1 {
 }
 .nav-box .nav-bar {
   width: 30%;
-  padding-right: 2%;
+  padding-right: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -4618,10 +4639,55 @@ h1 {
   align-items: center;
   color: #ffffff;
   background-color: #006400;
-  border: 2px solid #006400;
   border-radius: 8px;
 }
-.banner-img {
-  margin-top: 80px;
+.banner-image-wrapper {
+  position: relative;
   width: 100%;
+  z-index: -1;
+}
+.banner-image-wrapper .banner-img {
+  margin-top: 150px;
+  width: 100%;
+}
+.banner-image-wrapper .text-block {
+  position: absolute;
+  left: 0;
+  top: 78%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.features {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.features .feature-box {
+  width: 30%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.features .feature-box i {
+  font-size: 12rem;
+  padding-bottom: 20px;
+  color: #006400;
+}
+.features .feature-box h3 {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.features .feature-box p {
+  font-size: 2rem;
+  padding: 5%;
 }
