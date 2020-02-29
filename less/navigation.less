@@ -3,23 +3,31 @@
   top: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 25px 0;
-  background-color: #ffffff;
+  padding: 20px 0;
+  background-color: @bg-nav;
   .flex(space-between, center);
 
+  @media(@tablet) {
+    padding: 10px 0;
+  }
+
 .logo {
-  width: 70%;
+  width: 60%;
   .flex(flex-start, center);
   padding-left: 2%;
 
   i {
-    padding: 0 2% 5px 0;
+    padding: 0 15px 5px 0;
     font-size: 5rem;
+
+    @media(@tablet) {
+      font-size: 4rem;
+    }
   }
 }
 
   .nav-bar {
-    width: 30%;
+    width: 40%;
     padding-right: 5%;
     .flex(space-between, center);
   }
@@ -31,8 +39,12 @@
     text-decoration: none;
     .center();
     color: #ffffff;
-    background-color: @header-font-color;
-    // border: 2px solid @header-font-color;
+    background-color: @fill-color;
     border-radius: 8px;
+
+    @media(@tablet) {
+      font-size: 1.6rem;
+      padding: 8px;
+    }
   }
 }
