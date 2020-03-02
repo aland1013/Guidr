@@ -11,10 +11,20 @@
     padding: 10px 0;
   }
 
+  @media(@phone) {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+  }
+
 .logo {
   width: 60%;
   .flex(flex-start, center);
   padding-left: 2%;
+
+  @media(@phone) {
+    width: 100%;
+    .center();
+  }
 
   i {
     padding: 0 15px 5px 0;
@@ -30,6 +40,13 @@
     width: 40%;
     padding-right: 5%;
     .flex(space-between, center);
+
+    @media(@phone) {
+      width: 100%;
+      flex-direction: column;
+      .center();
+      padding: 2% 8%;
+    }
   }
 
   a {
@@ -45,6 +62,12 @@
     @media(@tablet) {
       font-size: 1.6rem;
       padding: 8px;
+    }
+
+    @media(@phone) {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 4%;
     }
   }
 }

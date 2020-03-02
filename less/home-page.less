@@ -10,6 +10,10 @@
     @media(@tablet) {
       margin-top: 80px;
     }
+
+    @media(@phone) {
+      margin-top: 225px;
+    }
   }
 
   .text-block {
@@ -19,6 +23,10 @@
     width: 100%;
     text-align: center;
     color: white;
+
+    @media(@phone) {
+      top: 88%;
+    }
   }
 }
 
@@ -46,6 +54,10 @@
       flex-direction: row;
       margin-bottom: 30px;
     }
+
+    @media(@phone) {
+      flex-direction: column;
+    }
     
 
     i {
@@ -56,6 +68,11 @@
       @media(@tablet) {
         font-size: 6rem;
         padding-left: 5%;
+      }
+
+      @media(@phone) {
+        font-size: 4rem;
+        padding: 0 0 10px 0;
       }
     }
 
@@ -68,6 +85,12 @@
         font-size: 2.4rem;
         text-align: left;
         padding-left: 5%;
+      }
+
+      @media(@phone) {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 0 10px 0;
       }
     }
 

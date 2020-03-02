@@ -4605,6 +4605,11 @@ h2 {
     font-size: 3rem;
   }
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 .container {
   max-width: 1000px;
   width: 100%;
@@ -4626,12 +4631,26 @@ h2 {
     padding: 10px 0;
   }
 }
+@media (max-width: 500px) {
+  .nav-box {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+  }
+}
 .nav-box .logo {
   width: 60%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .nav-box .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .nav-box .logo i {
   padding: 0 15px 5px 0;
@@ -4648,6 +4667,16 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-box .nav-bar {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 8%;
+  }
 }
 .nav-box a {
   width: 40%;
@@ -4667,6 +4696,13 @@ h2 {
     padding: 8px;
   }
 }
+@media (max-width: 500px) {
+  .nav-box a {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 4%;
+  }
+}
 .banner-image-wrapper {
   position: relative;
   width: 100%;
@@ -4681,6 +4717,11 @@ h2 {
     margin-top: 80px;
   }
 }
+@media (max-width: 500px) {
+  .banner-image-wrapper .banner-img {
+    margin-top: 225px;
+  }
+}
 .banner-image-wrapper .text-block {
   position: absolute;
   left: 0;
@@ -4688,6 +4729,11 @@ h2 {
   width: 100%;
   text-align: center;
   color: white;
+}
+@media (max-width: 500px) {
+  .banner-image-wrapper .text-block {
+    top: 88%;
+  }
 }
 .features {
   width: 85%;
@@ -4720,6 +4766,11 @@ h2 {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 500px) {
+  .features .feature-box {
+    flex-direction: column;
+  }
+}
 .features .feature-box i {
   font-size: 8rem;
   padding-bottom: 20px;
@@ -4729,6 +4780,12 @@ h2 {
   .features .feature-box i {
     font-size: 6rem;
     padding-left: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature-box i {
+    font-size: 4rem;
+    padding: 0 0 10px 0;
   }
 }
 .features .feature-box h3 {
@@ -4741,6 +4798,13 @@ h2 {
     font-size: 2.4rem;
     text-align: left;
     padding-left: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature-box h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0 10px 0;
   }
 }
 .features .feature-box p {
