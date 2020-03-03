@@ -12,7 +12,7 @@
     }
 
     @media(@phone) {
-      margin-top: 225px;
+      margin-top: 205px;
     }
   }
 
@@ -40,6 +40,11 @@
     flex-direction:column;
   }
 
+  @media(@phone) {
+    width: 100%;
+    padding: 10px 0 20px;
+  }
+
   .feature-box {
     width: 30%;
     padding: 20px 0;
@@ -57,9 +62,9 @@
 
     @media(@phone) {
       flex-direction: column;
+      margin-bottom: 10px;
     }
     
-
     i {
       font-size: 8rem;
       padding-bottom: 20px;
@@ -79,12 +84,11 @@
     h3 {
       font-size: 3.2rem;
       text-align: center;
-      padding-bottom: 10px;
 
       @media(@tablet) {
         font-size: 2.4rem;
         text-align: left;
-        padding-left: 5%;
+        padding: 0 0 10px 5%;
       }
 
       @media(@phone) {
@@ -96,14 +100,17 @@
 
     p {
       font-size: 2rem;
-      padding: 5%;
+      padding: 5% 10%;
 
       @media(@tablet) {
         font-size: 1.6rem;
         padding: 0 5%;
       }
-    }
 
+      @media(@phone) {
+        padding: 0 10%;
+      }
+    }
   }
 }
 

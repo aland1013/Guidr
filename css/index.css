@@ -4596,6 +4596,11 @@ h1 {
     font-size: 6rem;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-size: 4.2rem;
@@ -4719,7 +4724,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .banner-image-wrapper .banner-img {
-    margin-top: 225px;
+    margin-top: 205px;
   }
 }
 .banner-image-wrapper .text-block {
@@ -4748,6 +4753,12 @@ h2 {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .features {
+    width: 100%;
+    padding: 10px 0 20px;
+  }
+}
 .features .feature-box {
   width: 30%;
   padding: 20px 0;
@@ -4769,6 +4780,7 @@ h2 {
 @media (max-width: 500px) {
   .features .feature-box {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 }
 .features .feature-box i {
@@ -4791,13 +4803,12 @@ h2 {
 .features .feature-box h3 {
   font-size: 3.2rem;
   text-align: center;
-  padding-bottom: 10px;
 }
 @media (max-width: 800px) {
   .features .feature-box h3 {
     font-size: 2.4rem;
     text-align: left;
-    padding-left: 5%;
+    padding: 0 0 10px 5%;
   }
 }
 @media (max-width: 500px) {
@@ -4809,11 +4820,16 @@ h2 {
 }
 .features .feature-box p {
   font-size: 2rem;
-  padding: 5%;
+  padding: 5% 10%;
 }
 @media (max-width: 800px) {
   .features .feature-box p {
     font-size: 1.6rem;
     padding: 0 5%;
+  }
+}
+@media (max-width: 500px) {
+  .features .feature-box p {
+    padding: 0 10%;
   }
 }
