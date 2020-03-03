@@ -4695,6 +4695,11 @@ h2 {
   background-color: #006400;
   border-radius: 8px;
 }
+.nav-box a:hover {
+  color: #006400;
+  background-color: white;
+  border: 1px solid #006400;
+}
 @media (max-width: 800px) {
   .nav-box a {
     font-size: 1.6rem;
@@ -4718,8 +4723,14 @@ footer a {
   align-items: center;
   margin: 0 auto;
   color: #ffffff;
+  border: 1px solid #ffffff;
   background-color: #006400;
   border-radius: 8px;
+}
+footer a:hover {
+  color: #006400;
+  background-color: white;
+  border: 1px solid #006400;
 }
 @media (max-width: 800px) {
   footer a {
