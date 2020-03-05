@@ -4779,7 +4779,7 @@ footer p {
   top: 78%;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 @media (max-width: 500px) {
   .banner-image-wrapper .text-block {
